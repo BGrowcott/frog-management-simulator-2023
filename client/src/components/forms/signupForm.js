@@ -9,6 +9,7 @@ const SignupForm = () => {
         confirmPassword: "",
     };
     const [formState, setFormState] = useState(emptyForm);
+    const [errorMessage, setErrorMessage] = useState("");
 
     const submitForm = async (event) => {
         event.preventDefault();
@@ -18,13 +19,20 @@ const SignupForm = () => {
                 body: JSON.stringify(formState),
             });
             const data = await response.json();
+
+            if (response.status !== 200) {
+                throw data;
+            }
+
             AuthService.login(data);
         } catch (error) {
             console.log(error);
+            setErrorMessage(error.message);
         }
     };
 
     function handleFormInput(event) {
+        setErrorMessage("");
         const { name, value } = event.target;
         setFormState({
             ...formState,
@@ -70,6 +78,7 @@ const SignupForm = () => {
                     Signup
                 </button>
             </form>
+            <p>{errorMessage}</p>
         </div>
     );
 };

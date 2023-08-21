@@ -13,6 +13,10 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(authMiddleware);
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "../client/build")));
+app.get(/^(?!\/api).*/, (req, res) => {
+    res.sendFile(path.join(__dirname, "../client/build/index.html"));
+});
 app.use(routes);
 app.use(
     session({
