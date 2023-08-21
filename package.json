@@ -1,0 +1,26 @@
+{
+  "name": "frog-management-simulator-2023",
+  "version": "1.0.0",
+  "description": "New best game ever",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js --ignore client",
+    "dev": "concurrently \"cd server && nodemon\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BGrowcott/frog-management-simulator-2023.git"
+  },
+  "author": "Ben Growcott",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BGrowcott/frog-management-simulator-2023/issues"
+  },
+  "homepage": "https://github.com/BGrowcott/frog-management-simulator-2023#readme",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
