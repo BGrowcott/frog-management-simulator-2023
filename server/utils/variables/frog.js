@@ -1,12 +1,13 @@
 const frogNames = [
-
+  "Aaron",
+  "Ben"
 ]
 
-const rattributesArray = [
+const traitsArray = [
     "evil",
     "moist eyed",
     "speaks mouse",
-    "speaks elvish",
+    "speaks toad",
     "rabid",
     "shy",
     "passive-aggressive",
@@ -27,14 +28,14 @@ const rattributesArray = [
     "cannibal",
     "nimble",
     "wimp",
-    "annoying squeak",
+    "annoying croak",
     "very neurotic",
     "restless",
     "murderer",
     "loves mice",
-    "cat killer",
-    "cat lover",
-    "a rat amongst rats",
+    "toad killer",
+    "toad lover",
+    "a frog amongst frogs",
     "plague spreader",
     "cocaine addiction",
     "button presser",
@@ -51,9 +52,9 @@ const rattributesArray = [
     "overweight",
     "classy",
     "class act",
-    "prefers the company of mice",
-    "rat about town",
-    "hates mice",
+    "prefers the company of newts",
+    "frog about town",
+    "hates toads",
     "people pleaser",
     "brave",
     "descended from royalty",
@@ -62,5 +63,5 @@ const rattributesArray = [
     "mistrustful of humans",
     "narcissistic",
     "holier than thou",
-    "friend of cats",
+    "friend of toads",
   ];
