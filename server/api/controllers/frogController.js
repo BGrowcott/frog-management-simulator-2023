@@ -15,5 +15,15 @@ module.exports = {
             console.log(error)
             res.status(500).json(error);
         }
-    }
+    },
+
+    async allFrogs (req, res) {
+        try {
+            const frogs = await Frog.find().populate("traits");
+            res.json(frogs)
+        } catch (error) {
+            console.log(error)
+            res.status(500).json(error);
+        }
+    },
 }

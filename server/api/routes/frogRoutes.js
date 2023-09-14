@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { createFrog } = require('../controllers/frogController');
+const { createFrog, allFrogs } = require('../controllers/frogController');
 
-router.route('/').post(createFrog);
+router.route('/').get(allFrogs).post(createFrog);
 
 module.exports = router;

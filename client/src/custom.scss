@@ -1,3 +1,28 @@
 $dark: rgb(4, 46, 5);
 
 @import '~bootstrap/scss/bootstrap.scss';
+
+.tooltip-parent {
+    position: relative;
+    .tooltip-custom {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;        
+        z-index: -1;
+        opacity: 0;
+        box-shadow: 0px 0px 3px black;
+        border-radius: 5px;
+        background-color: aliceblue;
+        padding: 5px;
+        transition: 0.5s all;
+        transition-delay: 0.5s;
+        min-width: 200%;        
+    }
+}
+
+.tooltip-parent:hover {
+    .tooltip-custom {
+        opacity: 1;
+        z-index: 10;
+    }
+}
