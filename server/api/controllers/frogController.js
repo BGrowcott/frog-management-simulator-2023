@@ -4,6 +4,7 @@ const { traitsArray } = require("../../utils/variables/frog");
 module.exports = {
     async createFrog(req, res) {
         try {
+            await Trait.create(traitsArray)
             const possibleTraits = await Trait.find();
             const randomTraits = possibleTraits.sort(() => 0.5 - Math.random()).slice(0, 5);
             const frog = await Frog.create({

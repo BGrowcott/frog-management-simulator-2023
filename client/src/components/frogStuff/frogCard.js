@@ -19,7 +19,7 @@ const FrogCard = ({ frog }) => {
                         {Object.keys(frog.attributes.coreAttributes).map(
                             (attribute, index) => {
                                 return (
-                                    <div className="col-6 ">
+                                    <div key={index} className="col-6 ">
                                         <div>
                                             <span className="tooltip-parent">
                                                 <div className="tooltip-custom">
