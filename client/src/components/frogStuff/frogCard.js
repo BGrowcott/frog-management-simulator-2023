@@ -10,7 +10,7 @@ const FrogCard = ({ frog }) => {
             <div className="card m-auto" style={{ maxWidth: "25rem" }}>
                 <h2 className="text-center">{frog.name}</h2>
                 <img
-                    src={images[Math.floor(Math.random() * 2)]}
+                    src={frog1}
                     className="card-img-top image-responsive"
                     alt="Your frog looking cute"
                 ></img>

@@ -22,7 +22,7 @@ const Frog = () => {
             method: "POST",
         });
         const data = await response.json();
-        console.log(data);
+        setFrogData([...frogData, data]);
     }
 
     return (

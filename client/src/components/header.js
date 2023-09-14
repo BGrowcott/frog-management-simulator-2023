@@ -23,6 +23,12 @@ const Header = () => {
                     >
                         Example Page
                     </Link>
+                    <Link
+                        className="text-white text-decoration-none mx-2"
+                        to={"/frog"}
+                    >
+                        Frogs!
+                    </Link>
                     {AuthService.loggedIn() ? (
                         <button
                             onClick={AuthService.logout}
