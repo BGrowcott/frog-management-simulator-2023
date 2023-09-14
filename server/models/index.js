@@ -1,5 +1,6 @@
 const Example = require('./Example');
 const User = require('./user/User');
-const User = require('./frog/Frog');
+const Frog = require('./frog/Frog');
+const Trait = require('./frog/Trait');
 
-module.exports = { Example, User }
+module.exports = { Example, Frog, Trait, User };

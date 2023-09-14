@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import Example from "./pages/example";
 import ExampleModal from "./components/modals/exampleModal";
 import Login from "./pages/login";
+import Frog from "./pages/frog";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/example" element={<Example />} />
                         <Route path="/login" element={<Login />} />
+                        <Route path="/frog" element={<Frog />} />
                     </Routes>
                 </main>
                 <Footer />
